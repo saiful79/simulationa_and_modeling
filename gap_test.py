@@ -1,5 +1,5 @@
 print("Gap test 7.4.4")
-
+D_alpha= 0.136
 li = [
 4,1,3,5,1,7,2,8,2,0,7,9,1,3,5,2,7,9,4,1,6,3,
 3,9,6,3,4,8,2,3,1,9,4,4,6,8,4,1,3,8,9,5,5,7,
@@ -101,18 +101,35 @@ def main(interval):
 	start = 0
 	end = interval
 	print("---------------------------------------------------------------------------------------------")
-	print("Gap lenght \t Frequency \t R.F \t \tC.F SN(x) \t\t F(x) \t \t|F(x)-SN(x)|")
+	print("Gap lenght \t Frequency \t R.F \tC.F SN(x) \t F(x) \t|F(x)-SN(x)|")
 	print("---------------------------------------------------------------------------------------------")
+	C_R_sum = 0
+	r_f = []
 	for i in range(interation):
 		sum_of_fre = 0 
 		for j in range(start,end):
 			sum_of_fre = sum_of_fre + value_touple[j][1]
 			C_R = sum_of_fre/100
 		final_frequency.append(C_R)
-		print(start,"-",end-1,"\t\t",sum_of_fre,'\t\t',C_R,"\t")
+		C_R_sum=C_R_sum+C_R
+		s = float(start)
+		e =float(end-1)
+
+		F_x = 1-(0.9)**end
+		result_final=abs(F_x-C_R_sum)
+		r_f.append(result_final)
+		print("%0.2f/%0.2f"%(s,e),"\t",sum_of_fre,'\t\t',C_R,"\t",C_R_sum,'\t\t',"%0.4f"%(F_x),"\t",result_final)
 		start = end
 		end = start + interval
-	print(final_frequency)
+	# print(final_frequency)
+
+	result_final_max_value=max(r_f)
+	print("max value :",result_final_max_value)
+
+	if result_final_max_value <= D_alpha:
+		print("Uniform distribution is not rejected")
+	else:
+		print("Uniform distribution is rejected")
 
 
 
