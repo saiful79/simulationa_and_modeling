@@ -5,10 +5,10 @@ This repo contains Simulation Course, Chapter 7(Random Number Generation) Lab Wo
 Random Number Generation
 
 
-Kolmogrov Smirnov Test
-Chi Square Test
-Run Test
-Gap test
+1.Kolmogrov Smirnov Test
+2.Chi Square Test
+3.Run Test
+4.Gap test
 #Dependencies
 python3
 
