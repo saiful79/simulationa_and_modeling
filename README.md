@@ -18,3 +18,5 @@ This repo contains Simulation Course, Chapter 7(Random Number Generation) Lab Wo
 ## Contributor
 
 - Md.saiful islam
+- Md.Nurul islam nahid
+- Sagor Sarker
