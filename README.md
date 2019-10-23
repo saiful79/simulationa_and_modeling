@@ -1,5 +1,5 @@
 
-#Random Number Generation 
+# Random Number Generation 
 
 This repo contains Simulation Course, Chapter 7(Random Number Generation) Lab Work.
 
@@ -13,7 +13,7 @@ This repo contains Simulation Course, Chapter 7(Random Number Generation) Lab Wo
 1. Gap test 
 
 ##Dependencies
-- 1. python3
+- python3
 
 ## Contributor
 
