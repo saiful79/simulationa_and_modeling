@@ -1,14 +1,20 @@
-#Random_Number_Generation
+
+#Random Number Generation 
+
 This repo contains Simulation Course, Chapter 7(Random Number Generation) Lab Work.
 
-#Implementation list
-Random Number Generation
+## Implementation list Random Number Generation
+1. Random Number Generation
 
+## Random Number Testing
+1. Kolmogrov Smirnov Test
+1. Chi Square Test 
+1. Run Test 
+1. Gap test 
 
-1.Kolmogrov Smirnov Test
-2.Chi Square Test
-3.Run Test
-4.Gap test
-#Dependencies
-python3
+##Dependencies
+- 1. python3
 
+## Contributor
+
+- Md.saiful islam
